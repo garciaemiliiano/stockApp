@@ -5,14 +5,13 @@
     <title>Inicio</title>
 </head>
 <body>
-    <section class="formulario_agregar"> 
-        <form action="agregar/" method="GET">
-            <input type="text" name="add" id="" placeholder="Escriba el nombre del producto">
+    <section class="formulario_agregar_nombre"> 
+        <form action="{% url 'projecto_base:agregar_cliente' %}" method="GET">
+            <input type="text" name="add_name" id="" placeholder="Nombre">
+            <input type="text" name="add_paren" id="" placeholder="Parentezco">
             <input type="Submit" value="Agregar">
-    </form>
-
+        </form>
     </section>
-
     <section class="mostrar_todos">
         <ul>
             {% for cliente in clientes %}

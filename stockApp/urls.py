@@ -4,5 +4,5 @@ from stockApp import views
 
 urlpatterns = [
     path('',views.mostrarTodos, name="home"),
-    path('agregar/',views.agregarCliente),
+    path('agregar/',views.agregarCliente,name = "agregar_cliente"),
 ]
