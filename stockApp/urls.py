@@ -3,6 +3,6 @@ from django.contrib import admin
 from stockApp import views
 
 urlpatterns = [
-    path('',views.home, name="home"),
-    path('agregar',views.agregar),
+    path('',views.mostrarTodos, name="home"),
+    path('agregar/',views.agregarCliente),
 ]

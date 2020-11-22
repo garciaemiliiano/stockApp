@@ -5,10 +5,23 @@
     <title>Inicio</title>
 </head>
 <body>
-    <form action="/agregar" method="POST">
-    <input type="text" name="add" id="" placeholder="Escriba el nombre del producto">
-    <input type="Submit" value="Agregar">
-    
+    <section class="formulario_agregar"> 
+        <form action="agregar/" method="GET">
+            <input type="text" name="add" id="" placeholder="Escriba el nombre del producto">
+            <input type="Submit" value="Agregar">
     </form>
+
+    </section>
+
+    <section class="mostrar_todos">
+        <ul>
+            {% for cliente in clientes %}
+            <li>
+                {{cliente.nombre}}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
 </body>
 </html>
