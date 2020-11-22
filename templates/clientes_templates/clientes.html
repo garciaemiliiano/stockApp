@@ -1,12 +1,10 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-</head>
-<body>
+{% extends "base_page.html" %}
+{% load static %}
+{% block title %} Clientes {% endblock %}
+
+{% block content %}
     <section class="formulario_agregar_nombre"> 
-        <form action="{% url 'projecto_base:agregar_cliente' %}" method="GET">
+        <form action="{% url 'clientes:agregar_cliente' %}" method="GET">
             <input type="text" name="add_name" id="" placeholder="Nombre">
             <input type="text" name="add_paren" id="" placeholder="Parentezco">
             <input type="Submit" value="Agregar">
@@ -21,6 +19,4 @@
             {% endfor %}
         </ul>
     </section>
-
-</body>
-</html>
+{% endblock %}
