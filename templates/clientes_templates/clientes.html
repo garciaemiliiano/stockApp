@@ -3,20 +3,23 @@
 {% block title %} Clientes {% endblock %}
 
 {% block content %}
+    <h2  class ="form_title">Ingrese un nuevo cliente</h2>
     <section class="formulario_agregar_nombre"> 
         <form action="{% url 'clientes:agregar_cliente' %}" method="GET">
-            <input type="text" name="add_name" id="" placeholder="Nombre">
+            <input type="text" name="add_name" class="name_place" placeholder="Nombre">
+            <label class="name-box_name">Username</label>
             <input type="text" name="add_paren" id="" placeholder="Parentezco">
             <input type="Submit" value="Agregar">
         </form>
     </section>
-    <section class="mostrar_todos">
+    
+    <div class="mostrar_todos">
         <ul>
             {% for cliente in clientes %}
-            <li>
+            <li class="elementos">
                 {{cliente.nombre}}
             </li>
             {% endfor %}
         </ul>
-    </section>
+    </div>
 {% endblock %}

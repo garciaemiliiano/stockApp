@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+	font-weight: 400;
+    display: flex;
+    background: rgb(42,94,153);
+    background: linear-gradient(90deg, rgba(42,94,153,1) 0%, rgba(67,156,154,1) 39%, rgba(88,220,139,1) 100%);
+    align-items: center;
+}
+
+header {
+	display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-bottom: 80px;
+}
+
+.contenedor {
+	background-color:#282b33;
+	width: 90%;
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+.menu  {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu a {
+	font-size: 22px;
+    border-bottom: 2px solid transparent;
+    margin-left: 40px;
+	text-decoration: none;
+    transition: all 0.3s ease;
+    background: -webkit-linear-gradient(#ffff 0%, rgba(67,156,154,1) 39%, rgba(88,220,139,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid rgba(67,156,154,1);
+}
+
+.formulario_agregar_nombre {
+    max-width: 60%;
+    margin-right: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.formulario_agregar_nombre .name_place {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.name-box_name{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.form_title {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.name_place input:focus ~ label,
+.name_place input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+/*#e7f0ff*/
+
+
+.elementos{
+    color: #e7f0ff;
+}

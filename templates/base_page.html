@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href={% static 'css/style.css' %}>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="{% url 'projecto_base:home' %}"><img src="{% static 'images/ur_logo.png '%}" width="100"></a>
-        </div>
-
-        <section class="menu_nav">
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <a href="{% url 'projecto_base:home' %}"><img src="{% static 'images/ur_logo.png '%}" width="100"></a>
+            </div>
             <nav class="menu">
-                <ul class="lista">
-                    <li>
-                        <a href="{% url 'projecto_base:home' %}">Inicio</a></li>
-                    <li>
-                        <a href="{% url 'clientes:clientes' %}">Clientes</a></li>
-                    <li>
-                        <a href="#">Depósito</a></li>
-                    <li>
-                        <a href="#">A Entregar</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+                <a href="{% url 'projecto_base:home' %}">Inicio</a></li>
+                <a href="{% url 'clientes:clientes' %}">Clientes</a></li>
+                <a href="#">Depósito</a></li>
+                <a href="#">A Entregar</a>
+            </nav> 
+        </header>
     
-    <section class="main_body">
-        {% block content %}
+        <section class="main_body">
+            {% block content %}
+    
+            
+            
+            {% endblock %}
+        </section>
+    
+    
+    
+    
+    </div>
 
-        
-        
-        {% endblock %}
-    </section>
+     
+    
+    <!-- 
+    
 
-    <footer class="pie_pag">All rights reserved</footer>
+    <footer class="pie_pag">Footer</footer>
     
     <div class="social_footer">
         <p>Redes</p> 
     </div>
     
-
+    -->
 </body>
 </html>
