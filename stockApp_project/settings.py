@@ -14,11 +14,10 @@ SECRET_KEY = 'tz+(6joq%7nj6p6+u=3*=ec7420_=q8psiw6j4s7_*b&j_rd)m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -29,6 +28,8 @@ INSTALLED_APPS = [
     'stockApp',
     'clientes',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
