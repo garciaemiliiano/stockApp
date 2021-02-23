@@ -53,7 +53,7 @@ header {
 	border-bottom: 2px solid rgba(67,156,154,1);
 }
 
-.formulario_agregar_nombre {
+.formulario_agregar_nombre, .parentezco_box {
     max-width: 60%;
     margin-right: 40px;
     position: relative;
@@ -63,7 +63,7 @@ header {
     
 }
 
-.formulario_agregar_nombre .name_place {
+.formulario_agregar_nombre .name_place, .parentezco_box {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
